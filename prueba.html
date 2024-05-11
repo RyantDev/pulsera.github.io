@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba</title>
+    <link rel="stylesheet" href="prueba.css">
+</head>
+<body>
+    <h1>Personaliza tu Pulsera</h1>
+
+<div>
+    <label for="tamanio">Tamaño:</label>
+        <select id="tamanio" onchange="actualizarVistaPrevia()">
+            <option value="10">Pequeño</option>
+            <option value="15">Mediano</option>
+            <option value="20">Grande</option>
+        </select>
+
+    <label for="color">Color:</label>
+        <select id="color" onchange="actualizarVistaPrevia()">
+            <option value="gold">Oro Amarillo</option>
+            <option value="silver">Oro Blanco</option>
+            <option value="pink">Oro Rosa</option>
+        </select>
+
+    <label for="cantidad">Cantidad:</label>
+        <select id="cantidad" onchange="actualizarVistaPrevia()">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+    </div>
+
+    <div id="pulsera-container">
+        <svg id="pulsera-svg" width="300" height="300">
+            <!-- Representa hasta 5 balines en una circunferencia -->
+            <circle class="hilo" id="hilo" cx="150" cy="150" r="80" fill="none" stroke="black" stroke-width="2" />
+            <image class="balin oculto" id="balin1" href="imagenes/balin_gold.png" x="0" y="0" width="20" height="20" />
+            <image class="balin oculto" id="balin2" href="imagenes/balin_gold.png" x="0" y="0" width="20" height="20" />
+            <image class="balin oculto" id="balin3" href="imagenes/balin_gold.png" x="0" y="0" width="20" height="20" />
+            <image class="balin oculto" id="balin4" href="imagenes/balin_gold.png" x="0" y="0" width="20" height="20" />
+            <image class="balin oculto" id="balin5" href="imagenes/balin_gold.png" x="0" y="0" width="20" height="20" />
+        </svg>
+    </div>
+    <script src="prueba.js"></script>
+</body>
+</html>
